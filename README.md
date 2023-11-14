@@ -4,7 +4,7 @@
 * 📈 Check out my latest Data Analysis Projects:
     * [🦠 How have Covid-19 infection and mortality rates correlated with vaccination coverage across regions over the pandemic timeline?](https://github.com/RichardEchols/How-have-Covid-19-infection-and-mortality-rates-correlated-with-vaccination-coverage-across-regions-)
     * [🏘️🏘️How Can We Unlock the True Potential of Nashville's Housing Market Data Through Rigorous Cleaning and Structuring?](https://github.com/RichardEchols/nashvillehousingproject/tree/main)
-    * 🚴🏿‍♂️ How Can Demographic and Commute Data Reveal Patterns in Bike Purchase Behavior? MS Excel Pivot Table, Dashboard Creation
+    * [🚴🏿‍♂️ How Can Demographic and Commute Data Reveal Patterns in Bike Purchase Behavior? MS Excel Pivot Table, Dashboard Creation](https://github.com/RichardEchols/BikepurchasebehaviorMSExcel)
     * 🏘️ Is an Airbnb business worth it in these areas? Showing insights through Tableau!
     * 💹How Do Global Data Analysts’ Salaries, Job Satisfaction, and Entry Barriers Correlate? - A Power BI Exploration
 * 👨🏿‍💼 How to contact me:
