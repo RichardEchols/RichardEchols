@@ -1,5 +1,5 @@
 ### Hello!😉 I'm Richard and I'm a Data Analyst from Atlanta
-* 💻 I love analyzing data, public speaking, educating & presenting to stakeholders, students, friends, family and others, cyber security and exercising!
+* 💻 I love analyzing data, public speaking, educating & presenting to stakeholders, students, friends, family and others, and I also love cyber security and exercising!
 * 🔥 I’m addicted to making myself better every single day!
 * 📈 Check out my latest Data Analysis Projects:
     * [🦠 How have Covid-19 infection and mortality rates correlated with vaccination coverage across regions over the pandemic timeline?](https://github.com/RichardEchols/How-have-Covid-19-infection-and-mortality-rates-correlated-with-vaccination-coverage-across-regions-)
