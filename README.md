@@ -1,16 +1,11 @@
-### Hi there 👋
-
-<!--
-**RichardEchols/RichardEchols** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Hello!😉 I'm Richard and I'm a Data Analyst from Atlanta
+* 💻 I love analyzing data, public speaking, educating & presenting to stakeholders, students, friends, family and others, cyber security and exercising!
+* 🔥 I’m addicted to making myself better every single day!
+* 📈 Check out my latest Data Analysis Projects:
+    * [🦠 How have Covid-19 infection and mortality rates correlated with vaccination coverage across regions over the pandemic timeline?](https://github.com/RichardEchols/How-have-Covid-19-infection-and-mortality-rates-correlated-with-vaccination-coverage-across-regions-)
+    * 🚴🏿‍♂️ How Can Demographic and Commute Data Reveal Patterns in Bike Purchase Behavior? MS Excel Pivot Table, Dashboard Creation
+    * 🏘️ Is an Airbnb business worth it in these areas? Showing insights through Tableau!
+    * 💹How Do Global Data Analysts’ Salaries, Job Satisfaction, and Entry Barriers Correlate? - A Power BI Exploration
+* 👨🏿‍💼 How to contact me:
+    * 📋 [Linkedin](https://www.linkedin.com/in/richard-echols/)
+    * 📧 richardechols92@gmail.com
