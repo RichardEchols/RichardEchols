@@ -1,56 +1,46 @@
 # Richard Echols
 
-**AI Workflow Architect · Forward Deployed AI Engineer · Founder of RMDW AI**
+**Applied AI Engineer · Founder of RMDW · Builder of the Jah private LLM platform**
 
-I build production AI systems that turn ideas into working business operations: websites, automations, local/private AI workstations, agent workflows, dashboards, and customer-facing tools.
+I build AI systems end to end and run them in production: model serving on my own GPUs, the API gateway in front of it, the agent products on top, and the customer deployments that use them.
 
-My current work sits at the intersection of enterprise consulting, AI workflow engineering, and practical business implementation. I use tools like **Codex, Claude, OpenAI, Gemini, Cursor, Vercel, Supabase, Stripe, GitHub, and local model runtimes** to design and ship systems that business owners and technical teams can actually use.
+## Jah: a private LLM platform
 
-## What I Build
+- **7 production model generations** shipped June to September 2026, each promoted through an eval gate with one-command rollback.
+- Served on **4x NVIDIA RTX PRO 6000 Blackwell** with SGLang: 1M-token context, vision, tool calling, up to **1,354 tokens/sec** aggregate.
+- **Time to first token cut from 33 s to 0.33 s** with FP8 KV cache, chunked prefill and priority scheduling; speculative decoding took single-stream decode from about 40 to 92.8 tok/s.
+- **Public benchmark:** pass@1 with hidden unit tests in a sandbox. Jah scores 19/20, tying Claude Opus 5 and GPT-5.6, and publishes the tasks it loses. → [kiyomibot.ai/benchmarks](https://kiyomibot.ai/benchmarks)
+- **13 open-weight models** on Hugging Face, about 2,000 downloads. → [huggingface.co/RMDWLLC](https://huggingface.co/RMDWLLC)
 
-- **AI business operating systems** for service businesses, consultants, and technical teams.
-- **Agentic workflows** that connect websites, forms, inboxes, CRMs, calendars, payments, and reporting.
-- **Local/private AI systems** for businesses that want model ownership and hardware control.
-- **AI coding and delivery tools** for faster product development and implementation.
-- **Client systems** that include websites, booking flows, lead capture, dashboards, and automation.
+## The gateway
 
-## Product Showcase
+One endpoint that speaks **OpenAI Chat Completions, Anthropic Messages and OpenAI Responses**, so Claude Code, Codex and Claude Desktop work against it with no changes. Hashed keys, metering, per-key concurrency guards, priority lanes and three-tier health-checked failover. Paying customers get a key with no human in the loop.
 
-These public repos document proprietary products and systems I have built. The source code remains private, but the public repos show the product thinking, architecture, use cases, and implementation scope.
+## Products
 
-| Product | What it Shows | Public Repo |
-|---|---|---|
-| **Kiyomi 7.7.7** | AI business delivery system with modular setup, connectors, agents, reporting, and growth workflows | [kiyomi-777-showcase](https://github.com/RichardEchols/kiyomi-777-showcase) |
-| **KiyomiKode** | Local AI coding tool/product experience for developers and operators | [kiyomikode-showcase](https://github.com/RichardEchols/kiyomikode-showcase) |
-| **Kaiju Coder** | Local-first coding model lab, evaluation harness, and model-product strategy | [kaiju-coder-showcase](https://github.com/RichardEchols/kaiju-coder-showcase) |
-| **RMDW AI CLI** | Thin local-AI command-line layer for private workstations and local model access | [rmdw-ai-cli-showcase](https://github.com/RichardEchols/rmdw-ai-cli-showcase) |
-| **RMDW AI Systems Portfolio** | Client builds, public case studies, and AI implementation examples | [rmdw-ai-systems-portfolio](https://github.com/RichardEchols/rmdw-ai-systems-portfolio) |
+| Product | What it is |
+|---|---|
+| **KiyomiKode Desktop** | Signed, notarized macOS agent app on the Claude Agent SDK. 60+ releases, background computer use, Chrome control, 55 connectors, 548-test release gate. [Releases](https://github.com/RichardEchols/kiyomikode-desktop-releases) |
+| **Kiyomi** | AI platform for businesses: agents, artifacts, private document search, connectors. 2,000+ users. [kiyomibot.ai](https://kiyomibot.ai) |
+| **RMDW Academy** | Claude-written, rubric-graded AI lessons tailored to each business. [rmdw.ai](https://rmdw.ai) |
+| **Second Key** | Claude Code plugin and MCP server that blocks risky agent actions. [secondkey.ai](https://secondkey.ai) |
 
-## Live Work
+Product source is private. The public showcase repos below document architecture and scope.
 
-- RMDW AI: [rmdw.ai](https://rmdw.ai)
-- Kiyomi Product Lab: [kiyomibot.ai](https://kiyomibot.ai)
-- YouTube: [@RichardEchols](https://www.youtube.com/@RichardEchols)
-- Substack: [richardechols.substack.com](https://richardechols.substack.com)
-- LinkedIn: [Richard Echols](https://www.linkedin.com/in/richard-echols/)
+## Showcase repos
 
-## Selected Public Builds
+[kiyomi-777-showcase](https://github.com/RichardEchols/kiyomi-777-showcase) · [kiyomikode-showcase](https://github.com/RichardEchols/kiyomikode-showcase) · [kaiju-coder-showcase](https://github.com/RichardEchols/kaiju-coder-showcase) · [super-kaiju](https://github.com/RichardEchols/super-kaiju) · [rmdw-ai-systems-portfolio](https://github.com/RichardEchols/rmdw-ai-systems-portfolio)
 
-- [Uppercuts by Sly](https://github.com/RichardEchols/uppercutsbysly) — booking and service-site build.
-- [Claude Cockpit](https://github.com/RichardEchols/claude-cockpit) — terminal/dashboard interface exploration.
-- [Resume Tailor Extension](https://github.com/RichardEchols/resume-tailor-extension) — AI-assisted resume tailoring extension.
-- Earlier data analytics portfolio projects remain available as background, but my current focus is AI systems engineering and implementation.
+## Stack
 
-## Core Stack
+**Inference:** SGLang, vLLM, llama.cpp, MLX distributed, speculative decoding, FP8 / FP4 / NVFP4 / GGUF, LoRA fine-tuning
+**Agents:** Claude Agent SDK, Anthropic and OpenAI APIs, MCP, tool use, computer use, RAG (pgvector, BM25)
+**Platform:** Python, TypeScript, Next.js, React, Swift, Electron, Cloudflare Workers, Vercel, Neon Postgres, Stripe, Docker, Ubuntu
 
-**AI / Agent Tools:** Codex, Claude, OpenAI, Gemini, Cursor, Ollama, MLX, local model runtimes  
-**Frontend / Product:** Next.js, React, TypeScript, Tailwind, Vercel  
-**Backend / Data:** Supabase, PostgreSQL, serverless APIs, automation pipelines  
-**Business Systems:** Stripe, Google Workspace, CRM workflows, dashboards, reporting, lead capture  
-**Delivery:** GitHub, CLI tooling, product docs, implementation playbooks, deployment workflows
+## Background
 
-## Positioning
+Enterprise and public sector before RMDW: a $1.6M ARR AI and FinOps portfolio at IBM, TBM analytics for a $7B IRS IT portfolio, and today Claude-assisted analytics and Power Platform automation for federal health IT leadership. M.S. Mathematics.
 
-I am not trying to be a traditional software engineer who disappears into code. I work best as a **forward deployed AI engineer**: sitting close to the business problem, using AI tools aggressively, and shipping systems that reduce friction, create leverage, and make the operation easier to run.
+## Links
 
-If you are reviewing this profile for a role, the best fit is work where I can use AI tools to build, automate, prototype, implement, and improve real systems quickly.
+[rmdw.ai](https://rmdw.ai) · [LinkedIn](https://www.linkedin.com/in/richard-echols/) · [YouTube @RichardBEchols](https://www.youtube.com/@RichardBEchols) · [Hugging Face](https://huggingface.co/RMDWLLC)
